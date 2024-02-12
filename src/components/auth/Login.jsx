@@ -1,7 +1,10 @@
+import axios from "axios";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { useAuthContext } from "../../context/AuthContext";
 
 const Login = () => {
+  const { setAuth } = useAuthContext();
   const navigate = useNavigate();
   const [data, setData] = useState({
     email: "",
@@ -10,12 +13,22 @@ const Login = () => {
 
   const handleData = (e) => {
     const { name, value } = e.target;
-    console.log(name, value);
+    setData((preData) => ({ ...preData, [name]: value }));
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(data);
+    axios.get("http://localhost:8000/users").then((res) => {
+      const authUser = res.data.find(
+        (user) => user.email == data.email && user.password == data.password
+      );
+      setAuth((preData) => ({ ...preData, ...authUser }));
+      setData({
+        email: "",
+        password: "",
+      });
+      navigate("/blogs");
+    });
   };
 
   return (
@@ -38,7 +51,7 @@ const Login = () => {
       <input
         type="password"
         value={data.password}
-        name="passworld"
+        name="password"
         onChange={handleData}
         placeholder="Enter your password"
         className="rounded-md border border-slate-200 p-2 block w-full focus:outline-slate-500"

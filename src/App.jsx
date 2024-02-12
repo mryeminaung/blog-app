@@ -5,22 +5,25 @@ import RootLayout from "./layout/RootLayout";
 import Register from "./components/auth/Register";
 import Login from "./components/auth/Login";
 import Home from "./components/Home";
+import { AuthContextProvider } from "./context/AuthContext";
 
 const App = () => {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<RootLayout />}>
-          <Route index element={<Home />} />
+    <AuthContextProvider>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<RootLayout />}>
+            <Route index element={<Home />} />
 
-          <Route path="register" element={<Register />} />
-          <Route path="login" element={<Login />} />
+            <Route path="register" element={<Register />} />
+            <Route path="login" element={<Login />} />
 
-          <Route path="blogs" element={<BlogList />} />
-          <Route path="blogs/:blogId" element={<BlogDetail />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
+            <Route path="blogs" element={<BlogList />} />
+            <Route path="blogs/:blogId" element={<BlogDetail />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </AuthContextProvider>
   );
 };
 
