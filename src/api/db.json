@@ -1,83 +1,106 @@
 {
-    "users": [
-        {
-            "id": 1,
-            "name": "Oliver",
-            "email": "oliver@mail.com",
-            "password":"1234",
-            "profile_url": "https://i.pinimg.com/originals/02/c5/a8/02c5a82909a225411008d772ee6b7d62.png"
-        }
-    ],
-    "blogs":[
-        {
-            "id": 1,
-            "title": "Learn TailwindCSS",
-            "body": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam deleniti reiciendis.Aliquam deleniti reiciendis.Aliquam deleniti reiciendis.",
-            "blog_img": "https://images.unsplash.com/photo-1682686581295-7364cabf5511?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            "category": "Nature",
-            "created_at": "2/Feb/2023",
-            "author": "Oliver"
-        },
-        {
-            "id": 2,
-            "title": "Learn TailwindCSS",
-            "body": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam deleniti reiciendis.Aliquam deleniti reiciendis.Aliquam deleniti reiciendis.",
-            "blog_img": "https://images.unsplash.com/photo-1707535484481-9be3f889e49c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDN8NnNNVmpUTFNrZVF8fGVufDB8fHx8fA%3D%3D",
-            "category": "Nature",
-            "created_at": "2/Feb/2023",
-            "author": "Oliver"
-        },
-        {
-            "id": 3,
-            "title": "Learn TailwindCSS",
-            "body": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam deleniti reiciendis.Aliquam deleniti reiciendis.Aliquam deleniti reiciendis.",
-            "blog_img": "https://images.unsplash.com/photo-1706820642350-805585dd2adc?q=80&w=2128&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            "category": "Nature",
-            "created_at": "2/Feb/2023",
-            "author": "Oliver"
-        },
-        {
-            "id": 4,
-            "title": "Learn TailwindCSS",
-            "body": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam deleniti reiciendis.Aliquam deleniti reiciendis.Aliquam deleniti reiciendis.",
-            "blog_img": "https://images.unsplash.com/photo-1682687219573-3fd75f982217?q=80&w=1975&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            "category": "Nature",
-            "created_at": "2/Feb/2023",
-            "author": "Oliver"
-        },
-        {
-            "id": 5,
-            "title": "Learn TailwindCSS",
-            "body": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam deleniti reiciendis.Aliquam deleniti reiciendis.Aliquam deleniti reiciendis.",
-            "blog_img": "https://plus.unsplash.com/premium_photo-1675249004119-e3c7f18f5b9b?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            "category": "Politic",
-            "created_at": "2/Feb/2023",
-            "author": "Oliver"
-        },{
-            "id": 6,
-            "title": "Learn TailwindCSS",
-            "body": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam deleniti reiciendis.Aliquam deleniti reiciendis.Aliquam deleniti reiciendis.",
-            "blog_img": "https://images.unsplash.com/photo-1707535484481-9be3f889e49c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDN8NnNNVmpUTFNrZVF8fGVufDB8fHx8fA%3D%3D",
-            "category": "Celebrity",
-            "created_at": "2/Feb/2023",
-            "author": "Oliver"
-        },{
-            "id": 7,
-            "title": "Learn TailwindCSS",
-            "body": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam deleniti reiciendis.Aliquam deleniti reiciendis.Aliquam deleniti reiciendis.",
-            "blog_img": "https://images.unsplash.com/photo-1707570071990-d51f6d902d91?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNHx8fGVufDB8fHx8fA%3D%3D",
-            "category": "IT",
-            "created_at": "2/Feb/2023",
-            "author": "Oliver"
-        },
-        {
-            "id": 8,
-            "title": "Learn TailwindCSS",
-            "body": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam deleniti reiciendis.Aliquam deleniti reiciendis.Aliquam deleniti reiciendis.",
-            "blog_img": "https://images.unsplash.com/photo-1682695795931-a546abdb6733?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            "category": "IT",
-            "created_at": "2/Feb/2023",
-            "author": "Oliver"
-        }
-    ]
+  "users": [
+    {
+      "id": "a9e1",
+      "name": "Oliver",
+      "email": "oliver@mail.com",
+      "password": "1234",
+      "profile_url": "https://i.pinimg.com/originals/02/c5/a8/02c5a82909a225411008d772ee6b7d62.png"
+    },
+    {
+      "id": "9ea9",
+      "name": "Nolan Travis",
+      "email": "dapolomeq@mailinator.com",
+      "password": "Pa$$w0rd!",
+      "profile_url": ""
+    },
+    {
+      "id": "ee14",
+      "name": "Ria Garza",
+      "email": "zudylosu@mailinator.com",
+      "password": "Pa$$w0rd!",
+      "profile_url": ""
+    },
+    {
+      "id": "6735",
+      "name": "Lee Gibson",
+      "email": "tiju@mailinator.com",
+      "password": "Pa$$w0rd!",
+      "profile_url": ""
+    }
+  ],
+  "blogs": [
+    {
+      "id": "1",
+      "title": "Learn TailwindCSS",
+      "body": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam deleniti reiciendis.Aliquam deleniti reiciendis.Aliquam deleniti reiciendis.",
+      "blog_img": "https://images.unsplash.com/photo-1682686581295-7364cabf5511?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "category": "Nature",
+      "created_at": "2/Feb/2023",
+      "author": "Oliver"
+    },
+    {
+      "id": "2",
+      "title": "Learn TailwindCSS",
+      "body": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam deleniti reiciendis.Aliquam deleniti reiciendis.Aliquam deleniti reiciendis.",
+      "blog_img": "https://images.unsplash.com/photo-1707535484481-9be3f889e49c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDN8NnNNVmpUTFNrZVF8fGVufDB8fHx8fA%3D%3D",
+      "category": "Nature",
+      "created_at": "2/Feb/2023",
+      "author": "Oliver"
+    },
+    {
+      "id": "3",
+      "title": "Learn TailwindCSS",
+      "body": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam deleniti reiciendis.Aliquam deleniti reiciendis.Aliquam deleniti reiciendis.",
+      "blog_img": "https://images.unsplash.com/photo-1706820642350-805585dd2adc?q=80&w=2128&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "category": "Nature",
+      "created_at": "2/Feb/2023",
+      "author": "Oliver"
+    },
+    {
+      "id": "4",
+      "title": "Learn TailwindCSS",
+      "body": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam deleniti reiciendis.Aliquam deleniti reiciendis.Aliquam deleniti reiciendis.",
+      "blog_img": "https://images.unsplash.com/photo-1682687219573-3fd75f982217?q=80&w=1975&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "category": "Nature",
+      "created_at": "2/Feb/2023",
+      "author": "Oliver"
+    },
+    {
+      "id": "5",
+      "title": "Learn TailwindCSS",
+      "body": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam deleniti reiciendis.Aliquam deleniti reiciendis.Aliquam deleniti reiciendis.",
+      "blog_img": "https://plus.unsplash.com/premium_photo-1675249004119-e3c7f18f5b9b?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "category": "Politic",
+      "created_at": "2/Feb/2023",
+      "author": "Oliver"
+    },
+    {
+      "id": "6",
+      "title": "Learn TailwindCSS",
+      "body": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam deleniti reiciendis.Aliquam deleniti reiciendis.Aliquam deleniti reiciendis.",
+      "blog_img": "https://images.unsplash.com/photo-1707535484481-9be3f889e49c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDN8NnNNVmpUTFNrZVF8fGVufDB8fHx8fA%3D%3D",
+      "category": "Celebrity",
+      "created_at": "2/Feb/2023",
+      "author": "Oliver"
+    },
+    {
+      "id": "7",
+      "title": "Learn TailwindCSS",
+      "body": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam deleniti reiciendis.Aliquam deleniti reiciendis.Aliquam deleniti reiciendis.",
+      "blog_img": "https://images.unsplash.com/photo-1707570071990-d51f6d902d91?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNHx8fGVufDB8fHx8fA%3D%3D",
+      "category": "IT",
+      "created_at": "2/Feb/2023",
+      "author": "Oliver"
+    },
+    {
+      "id": "8",
+      "title": "Learn TailwindCSS",
+      "body": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam deleniti reiciendis.Aliquam deleniti reiciendis.Aliquam deleniti reiciendis.",
+      "blog_img": "https://images.unsplash.com/photo-1682695795931-a546abdb6733?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "category": "IT",
+      "created_at": "2/Feb/2023",
+      "author": "Oliver"
+    }
+  ]
 }

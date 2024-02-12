@@ -13,7 +13,7 @@ const BlogList = () => {
   }, []);
 
   return (
-    <div className="flex flex-wrap justify-around py-10 gap-6 container mx-auto">
+    <div className="flex flex-wrap justify-around py-10 gap-6">
       {blogs && blogs.map((blog) => <BlogCard key={blog.id} blog={blog} />)}
     </div>
   );
