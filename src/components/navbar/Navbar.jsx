@@ -17,7 +17,7 @@ const Navbar = () => {
           <NavLink to="/blogs">Blogs</NavLink>
         </div>
         <div className="flex items-center gap-x-3 text-lg">
-          {auth && auth.name ? (
+          {auth ? (
             <div className="flex items-center gap-x-3">
               <h2 className="text-xl font-bold">{auth.name}</h2>
               <button

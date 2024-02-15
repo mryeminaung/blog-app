@@ -22,7 +22,7 @@ const Login = () => {
       const authUser = res.data.find(
         (user) => user.email == data.email && user.password == data.password
       );
-      setAuth((preData) => ({ ...preData, ...authUser }));
+      setAuth(authUser.name);
       setData({
         email: "",
         password: "",

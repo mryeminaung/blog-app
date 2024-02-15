@@ -1,9 +1,19 @@
 import { useLocation, useNavigate } from "react-router-dom";
+import { useAuthContext } from "../../context/AuthContext";
+import axios from "axios";
 
 const BlogDetail = () => {
+  const { auth } = useAuthContext();
   const location = useLocation();
   const navigate = useNavigate();
   const blog = location.state;
+
+  const handleDelete = (id) => {
+    if (confirm("Are you sure to delete?")) {
+      axios.delete(`http://localhost:8000/blogs/${id}`);
+      navigate("/blogs");
+    }
+  };
 
   return (
     blog && (
@@ -31,14 +41,19 @@ const BlogDetail = () => {
                 <span className="">{blog.created_at}</span>
               </div>
             </div>
-            <div className="space-x-3">
-              <button className="px-3 py-1 bg-slate-400 rounded-md">
-                Edit
-              </button>
-              <button className="px-3 py-1 bg-slate-400 rounded-md">
-                Delete
-              </button>
-            </div>
+            {auth === blog.author && (
+              <div className="space-x-3">
+                <button className="px-3 py-1 bg-slate-400 rounded-md">
+                  Edit
+                </button>
+                <button
+                  className="px-3 py-1 bg-slate-400 rounded-md"
+                  onClick={() => handleDelete(blog.id)}
+                >
+                  Delete
+                </button>
+              </div>
+            )}
           </div>
           <h2 className="text-3xl font-bold">{blog.title}</h2>
           <p className="text-xl">{blog.body}</p>
