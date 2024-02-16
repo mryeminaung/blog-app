@@ -1,4 +1,4 @@
-import { NavLink, useNavigate } from "react-router-dom";
+import { NavLink, useNavigate, Link } from "react-router-dom";
 import robot from "../../assets/robot.png";
 import { useAuthContext } from "../../context/AuthContext";
 
@@ -15,11 +15,20 @@ const Navbar = () => {
         <div className="flex items-center gap-x-3 text-lg font-semibold">
           <NavLink to="/">Home</NavLink>
           <NavLink to="/blogs">Blogs</NavLink>
+          {auth && <NavLink to="/user/dashboard">Dashboard</NavLink>}
         </div>
         <div className="flex items-center gap-x-3 text-lg">
           {auth ? (
             <div className="flex items-center gap-x-3">
-              <h2 className="text-xl font-bold">{auth.name}</h2>
+              <Link to="/user" className="text-xl font-bold">
+                {auth}
+              </Link>
+              <button
+                className="bg-slate-400 rounded-md px-4 py-1.5 text-white font-semibold"
+                onClick={() => navigate("/user/new-blog")}
+              >
+                Add blog
+              </button>
               <button
                 className="bg-slate-400 rounded-md px-4 py-1.5 text-white font-semibold"
                 onClick={logOut}
