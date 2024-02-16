@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 
-const BlogCard = ({ blog }) => {
+const BlogCard = ({ blog, typeFilter, searchParams }) => {
   const navigate = useNavigate();
 
   return (
@@ -39,7 +39,15 @@ const BlogCard = ({ blog }) => {
         </p>
         <button
           className="hover:bg-slate-600 bg-slate-500 text-white px-2 w-full py-1.5 rounded-md"
-          onClick={() => navigate(blog.id, { state: blog })}
+          onClick={() =>
+            navigate(blog.id, {
+              state: {
+                blog,
+                search: searchParams.toString(),
+                type: typeFilter,
+              },
+            })
+          }
         >
           See more
         </button>

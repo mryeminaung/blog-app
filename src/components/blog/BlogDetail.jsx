@@ -1,4 +1,4 @@
-import { useLocation, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useAuthContext } from "../../context/AuthContext";
 import axios from "axios";
 
@@ -6,12 +6,15 @@ const BlogDetail = () => {
   const { auth } = useAuthContext();
   const location = useLocation();
   const navigate = useNavigate();
-  const blog = location.state;
+  const { blog } = location.state;
+
+  const search = `?${location.state?.search}` || "";
+  const type = location.state?.type || "all";
 
   const handleDelete = (id) => {
     if (confirm("Are you sure to delete?")) {
       axios.delete(`http://localhost:8000/blogs/${id}`);
-      navigate("/blogs");
+      navigate(`/blogs${search}`);
     }
   };
 
@@ -19,12 +22,16 @@ const BlogDetail = () => {
     blog && (
       <div className="flex items-start py-10 justify-center">
         <div className="w-[600px] bg-slate-200 border border-slate-300 p-3 rounded-md space-y-3 relative">
-          <button
+          {/* return pre page with the type filter effect */}
+
+          <Link
+            to={`..${search}`}
+            relative="path"
             className="hover:bg-slate-600 bg-slate-500 text-white px-4 py-1 rounded-md"
-            onClick={() => navigate("/blogs")}
           >
-            Go Back
-          </button>
+            Back to {type} blogs
+          </Link>
+
           <div className="absolute bg-slate-300 rounded-md px-3 py-1 right-5 top-[60px]">
             {blog.category}
           </div>

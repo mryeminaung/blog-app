@@ -78,7 +78,14 @@ const BlogList = () => {
       </div>
       <div className="flex flex-wrap justify-around py-3 gap-6">
         {filteredBlogs &&
-          filteredBlogs.map((blog) => <BlogCard key={blog.id} blog={blog} />)}
+          filteredBlogs.map((blog) => (
+            <BlogCard
+              key={blog.id}
+              blog={blog}
+              typeFilter={typeFilter}
+              searchParams={searchParams}
+            />
+          ))}
       </div>
     </>
   );
